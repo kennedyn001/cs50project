@@ -1,6 +1,6 @@
 # cs50project
 A project done for cs50 course
-My cs50 final project This project is called U-library management system.
+My cs50 final project This project is called E-library management system.
 
 It helps to manage most of the library operations such as renting books and keeps track of important dates
 
