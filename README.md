@@ -12,6 +12,7 @@ and exactly when it has to be returned. Moreover, it calculates the fine for eac
 in time.
 
 To run it, just type from command flask run and install required library and you will be good to go.
+
 NB: It was developed using linux os. Requirements may differ for other OS.
 
 
