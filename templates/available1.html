@@ -1,0 +1,28 @@
+{% extends "layout1.html" %}
+
+{% block title %}
+    Available Books
+{% endblock %}
+
+{% block main %}
+    <table class = "table table-striped" style='text-align:center;'>
+        <thead>
+            <tr>
+                <th>Book id</th>
+                <th>Book title</th>
+                <th>Book Author</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in books %}
+            <tr style='text-align:center;'>
+                <td>{{ book.book_id }}</td>
+                <td>{{ book.title }}</td>
+                <td>{{ book.author }}</td>
+                <td><div style='background-color:green;border-radius:10px;color:white;'>Available </div></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

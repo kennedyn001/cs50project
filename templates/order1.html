@@ -1,0 +1,27 @@
+{% extends "layout1.html" %}
+
+{% block title %}
+    Place order
+{% endblock %}
+
+{% block main %}
+    <form action="/order1" method="post">
+        <h5>Just enter the book id and click on order</h5>
+        <div class="form-group">
+            <b><label for='book_id'>Book ID     : </label></b>  <input type="text" class="form-control" name="book_id" id= 'book_id' placeholder='Book ID' required>
+        </div>
+        <div class="form-group">
+            <b>Student ID  : {{ student_id }} </b>
+        </div>
+        <div class="form-group">
+            <b>Issue Date  : {{ d3 }} </b>
+        </div>
+        <div class="form-group">
+            <b style='color:red'>Expiry Date  : {{ expiry }} </b>
+        </div>
+        <div class="form-group">
+            <input type='submit' value='Order' class='btn btn-success'>
+        </div>
+        <h5 style='color:red'>If book is not returned in time, you will have to pay fine( $ 20/ every additional day)</h5>
+    </form>
+{% endblock %}

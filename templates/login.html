@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Login
+{% endblock %}
+
+{% block main %}
+<img src="/static/imgheader.PNG" width="100%" height="50px" alt="library image" style="border-radius: 10%; margin:0px">
+<table class="center">
+    <tr>
+        <td class="td"><img src="/static/admin.png"  alt="admin image" style="margin:4px" width=150px height="100px" class="img"></td>
+        <td class="td"><img src="/static/students.PNG" alt="students image" style="margin:4px" width=150px height="100px" class="img"></td>
+    </tr>
+    <tr>
+        <td class="td">
+            <form action="/login" method="post">
+
+                <div class="form-group">
+                    <input autocomplete="off"  class="form-control" name="username" placeholder="Username" type="text" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" name="password" placeholder="Password" type="password" required>
+                </div>
+                <button class="btn btn-success" type="submit">Log In</button>
+            </form>
+        </td>
+        <td class="td">
+            <form action="/login1" method="post" >
+
+                <div class="form-group">
+                    <input autocomplete="off"  class="form-control" name="username1" placeholder="Username" type="text" required>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" name="password1" placeholder="Password" type="password" required>
+                </div>
+                <button class="btn btn-success" type="submit">Log In</button>
+            </form>
+        </td>
+    </tr>
+</table>
+{% endblock %}

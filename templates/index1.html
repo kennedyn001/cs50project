@@ -1,0 +1,43 @@
+{% extends "layout1.html" %}
+
+{% block title %}
+    Student-index
+{% endblock %}
+
+{% block main %}
+    <table>
+         <tr>
+            <form action="/search1" method="post"  style ='margin-right:10px;'>
+                <div class="form-group">
+                    <h5>First get the book id in the available books tab or click <a href='/available1'>here</a></h5>
+                    <input autocomplete="off"  class="form-control" name="book_id" placeholder="Book ID" type="number" required>
+                </div>
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
+        </tr>
+        <tr>
+            <h5 style='padding-top: 20px;'>Available Books</h5>
+            <table class = "table table-striped">
+                <thead>
+                    <tr>
+                        <th>Book id</th>
+                        <th>Book title</th>
+                        <th>Book Author</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for book in books %}
+                    <tr>
+                        <td>{{ book.book_id }}</td>
+                        <td>{{ book.title }}</td>
+                        <td>{{ book.author }}</td>
+                        <td><div class='green' style='text-align:center'>Available</div></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </tr>
+
+    </table>
+{% endblock %}

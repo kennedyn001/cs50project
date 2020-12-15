@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    All
+{% endblock %}
+
+{% block main %}
+    <table class = "table table-striped" style='text-align:center;'>
+        <h4>All registered student</h4>
+        <thead>
+            <tr>
+                <th>Student Id</th>
+                <th>Student Name</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            {% for student in students %}
+            <tr styele='text-align:center;'>
+                <td>{{ student.id }}</td>
+                <td>{{ student.name }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

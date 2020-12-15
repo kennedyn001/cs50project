@@ -1,0 +1,134 @@
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+}
+
+.center
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img
+{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+}
+.td
+{
+  width: 350px;
+  text-align: center;
+}
+
+
+#navbar a:hover
+{
+    color: green;
+}
+
+#navbar a:active
+{
+    color: red;
+}
+
+.footer
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: orange;
+    color: white;
+    text-align: center;
+}
+
+.fa
+{
+    padding-top: 1px;
+    font-size: 30px;
+    width: 35px;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius : 25%;
+}
+
+.fa:hover
+{
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #E1306C;
+  color: white;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.red
+{
+    animation:blinkingText 1.1s infinite;
+    animation: blinkingBackground 1.1s infinite;
+    background-color:red;
+    border-radius:10px;
+    color:white;
+}
+@keyframes blinkingText
+{
+    0%{     color: white;    }
+    49%{    color: white; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: white;    }
+}
+@keyframes blinkingBackground{
+		0%		{ background-color: red;}
+		49%		{ background-color: red;}
+		60%		{ background-color: transparent;}
+		99%		{ background-color: transparent;}
+		100%	{ background-color: red;}
+		}
+.orange
+{
+  background-color:orange;
+  border-radius:10px;
+  color:white
+}
+.green
+{
+  background-color:green;
+  border-radius:10px;
+  color:white
+}

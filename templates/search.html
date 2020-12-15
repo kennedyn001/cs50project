@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Search
+{% endblock %}
+
+{% block main %}
+    <form action="/search" method="post" >
+        <div class="form-group">
+            <h5>First get the book id in the books tab or click <a href='/books'>here</a></h5>
+            <input autocomplete="off"  class="form-control" name="book_id" placeholder="Book ID" type="number" required>
+        </div>
+        <button class="btn btn-success" type="submit">Search</button>
+    </form>
+{% endblock %}
